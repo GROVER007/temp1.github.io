@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Noto+Sans:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #33312e;
+}
+
+h1{
+    font-size: 6rem; 
+    padding-left: 2%;
+    padding-bottom: 2%;
+    margin-left: 2%; 
+    margin-right: 15%;
+    margin-bottom: 3rem;
+    color: #c59849;
+    border-bottom: 2px solid #ea5550;
+}
+
+.front-page {
+    width: 100%;
+    height: 140vh;
+    background-color: #33312e;
+    
+  }
+
+.container{
+    height: 140vh;
+    background-color: #33312e;
+    padding-top: 3rem;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.container img{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    object-fit: cover cover;
+    z-index: 0;
+    filter: drop-shadow(5px 5px 10px black);
+}
+
+.container-2{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1023%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(51%2c 49%2c 46%2c 1)'%3e%3c/rect%3e%3cpath d='M -251.09511018107924%2c401 C 36.9%2c348.8 612.9%2c128 1188.9048898189208%2c140 C 1764.9%2c152 2578.69%2c433.2 2628.9048898189208%2c461 C 2679.12%2c488.8 1677.78%2c315.4 1440%2c279' stroke='rgba(197%2c 152%2c 73%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -726.6153452481346%2c336 C -438.62%2c290 137.38%2c64.6 713.3846547518654%2c106 C 1289.38%2c147.4 2008.06%2c542.6 2153.384654751865%2c543 C 2298.71%2c543.4 1582.68%2c195 1440%2c108' stroke='rgba(197%2c 152%2c 73%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -1297.7212866578313%2c485 C -1009.72%2c424.8 -433.72%2c220.8 142.27871334216857%2c184 C 718.28%2c147.2 1322.73%2c302.2 1582.2787133421687%2c301 C 1841.82%2c299.8 1468.46%2c202.6 1440%2c178' stroke='rgba(197%2c 152%2c 73%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -948.0972050039516%2c20 C -660.1%2c106.2 -84.1%2c409.2 491.9027949960485%2c451 C 1067.9%2c492.8 1742.28%2c260 1931.9027949960484%2c229 C 2121.52%2c198 1538.38%2c282.6 1440%2c296' stroke='rgba(197%2c 152%2c 73%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -2813.9945225100714%2c301 C -2525.99%2c263.2 -1949.99%2c109.8 -1373.9945225100714%2c112 C -797.99%2c114.2 -496.79%2c316.8 66.00547748992858%2c312 C 628.8%2c307.2 1165.2%2c132.8 1440%2c88' stroke='rgba(197%2c 152%2c 73%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -272.685577743242%2c139 C 15.31%2c174.6 591.31%2c297 1167.314422256758%2c317 C 1743.31%2c337 2552.78%2c238 2607.314422256758%2c239 C 2661.85%2c240 1673.46%2c305.4 1440%2c322' stroke='rgba(197%2c 152%2c 73%2c 1)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1023'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Fjalla One', sans-serif;
+    padding-top: 3rem;
+}
+
+.intro{
+    background-color: #33312e;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.intro-text{
+    font-family: 'Noto Sans', sans-serif;
+    color: #c59849;
+    font-size: 2rem;
+}
+
+.slider{
+    background-color: #c59849;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+}
+
+.hide{
+    background: #33312e;
+    overflow: hidden;
+}
+
+.hide span{
+    font-size: 4rem;
+    transform: translateY(100%);
+    display: inline-block;
+}
+
+.box{
+    columns: 4;
+    column-gap: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.container-2 .box .row img{
+    width: 100%;
+    margin-bottom: 5%;
+    filter: drop-shadow(3px 3px 6px black);
+    border: 1.5rem solid #17a398;
+}
+
+.container-3{
+    margin-top: 3%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px 100px;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1013%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(51%2c 49%2c 46%2c 1)'%3e%3c/rect%3e%3cpath d='M 0%2c418 C 144%2c385 432%2c273.4 720%2c253 C 1008%2c232.6 1296%2c303.4 1440%2c316L1440 560L0 560z' fill='rgba(102%2c 44%2c 145%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1013'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fb-box{
+	max-width: 850px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #c59849;
+	box-shadow: 5px 5px 19px 5px rgba(0,0,0,0.19);
+    border: 1.5rem solid #ea5550;
+}
+
+h2{
+    font-family: 'Fjalla One', sans-serif;
+	position: relative;
+	padding: 0 0 10px;
+	margin-bottom: 10px;
+}
+
+h2:after{
+	content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #17a398;
+}
+
+.left{
+	background: url("pics/21.jpg") no-repeat center;
+	background-size: cover;
+	height: 100%;
+}
+
+.right{
+	padding: 25px 40px;
+}
+
+.field{
+    color: #33312e;
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+}
+
+.field:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea{
+	min-height: 150px;
+}
+
+.btn{
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background-color: #17a398;
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.btn:hover{
+    background-color: #159389;
+}
+
+.field:focus{
+    border: 2px solid rgba(30,85,250,0.47);
+    background-color: #fff;
+}
+
+@media screen and (max-width: 600px){
+
+    .hide span{
+        font-size: 3rem;
+    }
+    h1{
+        font-size: 4rem;
+    }
+    .front-page{
+        height: 50vh;
+    }
+    .container{
+        margin-top: 9rem;
+        height: 50vh;
+    }
+    .fb-box{
+        border: 0.8rem solid #ea5550;
+        margin-left: -25%;
+        margin-right: -25%;
+    }
+}
+
+@media (max-width: 880px){
+
+    .front-page{
+        height: 80vh;
+    }
+    .container{
+        height: 80vh;
+    }
+	.fb-box{
+		grid-template-columns: 1fr;
+	}
+	.left{
+		height: 200px;
+	}
+}
+
+@media (max-width:1200px) {
+    .front-page{
+        height: 120vh;
+    }
+    .container{
+        height: 120vh;
+    }
+    .box{
+        columns: 3;
+    }
+
+    .container-2 .box .row img{
+        border: 1rem solid #17a398;
+    }
+}
+
+@media (max-width:992px) {
+    .front-page{
+        height: 100vh;
+    }
+    .container{
+        height: 100vh;
+    }
+    .box{
+        columns: 2;
+    }
+
+    .container-2 .box .row img{
+        border: 0.5rem solid #17a398;
+    }
+}
+
